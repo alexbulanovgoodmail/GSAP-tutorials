@@ -20,5 +20,8 @@ function loader() {
     .to('.load-container', { autoAlpha: 0, duration: 0.8, delay: 0.7 })
     .add(() => {
       document.querySelector('video').play();
-    }, '-=0.8');
+    }, '-=0.8')
+    .add(() => {
+      document.querySelector('.load-container').style.display = 'none';
+    });
 }
