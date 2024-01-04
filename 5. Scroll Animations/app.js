@@ -5,9 +5,18 @@ gsap.from('.b2 h2', {
   scale: 0.5,
   scrollTrigger: {
     trigger: '.b2 h2',
-    markers: true,
+    // markers: true,
     // Trigger Scroller
-    start: 'top bottom-=10%',
-    end: 'bottom+=20% top',
+    start: 'top 80%',
+    end: 'bottom 30%',
+    scrub: 0.5,
+    toggleActions: 'play pause reverse reset',
   },
+});
+
+ScrollTrigger.create({
+  trigger: '.b2',
+  pin: true,
+  markers: true,
+  end: 'bottom 50%',
 });
