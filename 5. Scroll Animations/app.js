@@ -6,5 +6,8 @@ gsap.from('.b2 h2', {
   scrollTrigger: {
     trigger: '.b2 h2',
     markers: true,
+    // Trigger Scroller
+    start: 'top bottom-=10%',
+    end: 'bottom+=20% top',
   },
 });
